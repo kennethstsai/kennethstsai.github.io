@@ -1,0 +1,78 @@
+<!doctype HTML>
+
+<head>
+	<title>City Squares</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</head>
+
+<body>
+
+	<div id="navbar">
+		<img class="navbar-item icon" src="assets/img/nav_img.JPG">
+		<a class="navbar-item link first" href="#home">Home</a>
+		<a class="navbar-item link" href="#s1">Rules</a>
+		<a class="navbar-item link" href="#s2">Cards</a>
+	</div>
+
+	<div id="home">
+		<div id="intro">
+			<div>
+				<h1 id='intro-header'>What is City Squares?</h1>
+				<p id="intro-text">As the urban planner of an up-and-coming city, it is your job to develop this fledgling town into the greatest settlement in the region. Outpace your rivals as you construct infrastructure and draft policies, but be careful not to let your city's pollution grow out of hand!<br><br>*The images here are placeholders because our prototype was delayed in shipping, so I wasn't able to get actual pictures.</p>
+			</div>
+		</div>
+		<img id="cover-image" src="assets/img/sample_cover.jpeg">
+	</div>
+
+	
+	<p class='spacer' id='s1'>Text Here</p>
+	<div id="rules">
+		<h1>How to Play</h1>
+		<div id='rules-content'>
+			<div class='carousel'>
+				<img class='arrow' id="back-arrow" src="assets/img/arrow_back.png">
+				<div id="carousel-container">
+					<div id="carousel-strip">
+						<div class="carousel-section">
+							<img class="instruction-image" id="0rules-img" src="assets/img/sample_rule.png">
+						</div>
+					</div>
+				</div>
+				<img class='arrow' id="next-arrow" src="assets/img/arrow_next.png">
+			</div>
+			<p class="text rules-text" id="0rules-text">1. Give each player one City Mat and two Token Trackers. Each player starts with 3 resources and zero pollution.</p>
+			<p class="text rules-text" id="1rules-text">2. Separate the cards by type. Energy cards have a green banner, Infrastructure cards have an orange banner, and Policy cards have a purple banner.</p>
+			<p class="text rules-text" id="2rules-text">3. Randomly remove 15 Infrastructure Cards and 10 Policy Cards. These cards will not be used during the game.</p>
+			<p class="text rules-text" id="3rules-text">4. Shuffle the remaining 60 cards into a single deck, and deal each player a starting hand of three cards.</p>
+			<p class="text rules-text" id="4rules-text">5. Place the remaining deck face-down in the center of the play area. Reveal the top three cards, and place them face-up to the right of the deck.</p>
+			<p class="text rules-text" id="5rules-text">6. Players may now choose to discard their starting hand and draw a new hand of two cards from the deck. Each player may only do so once.</p>
+			<p class="text rules-text" id="6rules-text">7. Set the Die in the center of the play area, and set it to 1. The die is used to track the number of rounds elapsed.</p>
+			<p class="text rules-text" id="7rules-text">8. You're now ready to play!</p>
+		</div>
+	</div>
+
+	<p class='spacer' id='s2'>Text Here</p>
+	<div id="cards">
+		<h1>Card Types</h1>
+		<div id="type-container">
+			<div id="card-content">
+				<div class="card-container" id="energy">
+					<img class="card-icon" id="energy-icon" src="assets/img/energy_card.JPG">
+				</div>
+				<div class="card-container" id="infrastructure">
+					<img class="card-icon" id="infrastructure-icon" src="assets/img/infra_card.JPG">
+				</div>
+				<div class="card-container" id="policy">
+					<img class="card-icon" id="policy-icon" src="assets/img/policy_card.JPG">
+				</div>
+			</div>
+			<p class="text card-text" id="help-text">Click on a card to learn more!</p>
+			<p class="text card-text" id="energy-text"><b>Energy Cards</b>: The standard building type in City Squares. Energy cards produce a variable amount of resources and pollution, and have no secondary effects.</p>
+			<p class="text card-text" id="infra-text"><b>Infrastructure Cards</b>: These buildings have special effects alongside their normal resource and pollution production. Some Infrastructure cards have an immediate effect, but others are ongoing.</p>
+			<p class="text card-text" id="policy-text"><b>Policy Cards</b>: These cards allow you to perform special actions at any time, but do not remain in your city and don't count towards your final score. Use them to get a leg up on the competition!</p>
+		</div>
+	</div>
+
+</body>
